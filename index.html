@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PoseNet - Camera Feed Demo</title>
+    <link href="./styles/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="info"></div>
+
+    <div id="loading">
+      <div class="spinner-text">Loading PoseNet model...</div>
+      <div class="sk-spinner sk-spinner-pulse"></div>
+    </div>
+
+    <button id="camera-switch" disabled>Switch Camera</button>
+
+    <div id="main">
+      <video id="video" playsinline=""></video>
+      <canvas id="output"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

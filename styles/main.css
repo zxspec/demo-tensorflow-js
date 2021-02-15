@@ -1,0 +1,58 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  transform: scaleX(-1);
+  display: none;
+}
+
+#camera-switch {
+  position: fixed;
+}
+
+/* Spinner block */
+#loading {
+  display: flex;
+  background-color: #eee;
+}
+
+#loading.none {
+  display: none;
+}
+
+.sk-spinner-pulse {
+  background-color: #333;
+  border-radius: 100%;
+  animation: sk-pulseScaleOut 1s ease-in-out infinite;
+}
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Info block */
+#info {
+  display: none;
+  font-size: 2rem;
+}
+
+#info.error {
+  display: block;
+  background: orange;
+  color: black;
+}
