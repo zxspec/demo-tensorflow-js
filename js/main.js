@@ -91,7 +91,7 @@ function resizeOutput({ canvas, video, cameraStream, screen }) {
 
 async function prepareCameraSwitcher(guiState) {
   const ids = await getCameraIDs();
-  throw new Error("wefwerfwf");
+
   if (ids.length > 1) {
     enableCameraSwitch();
     attachCameraSwitchHandler(() => cameraSwitchHandler(guiState));
