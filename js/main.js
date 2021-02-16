@@ -58,6 +58,10 @@ async function start(guiState) {
   window.addEventListener("resize", function () {
     resizeOutput(guiState);
   });
+
+  window.addEventListener("orientationchange", function () {
+    resizeOutput(guiState);
+  });
 }
 
 async function replaceEyesInRealTimeStream({
